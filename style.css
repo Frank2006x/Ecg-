@@ -4,14 +4,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #fdfcfd;
+    background-color:rgb(3, 2, 3);
 
 }
 li, a, button{
     font-family: "Space Grotesk", sans-serif;
     font-weight:600;
     font-size:16px;
-    color:#1a0e1b;
+    color:#f0e4f1;
     text-decoration: none;
     
 }
@@ -50,4 +50,34 @@ button{
 button:hover{
     background-color: rgba(160, 73, 162,0.8);
 
+}
+.login_screen{
+    
+    width: 400px;
+    position: absolute;
+    background-color:white;
+    border-radius: 6px;
+    transform: translate(-50%,-50%) scale(0.1);
+    top:0;
+    left: 50%;
+    
+    text-align: center;
+    color:#f0e4f1;
+    padding: 0px 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    
+}
+.open-login_screen{
+    top:50%;
+    visibility:visible ;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
 }
