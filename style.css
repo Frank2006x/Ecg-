@@ -1,0 +1,19 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color:#fdfcfd;
+}
+
+
+.title{
+    font-size:40px;
+    color:#1a0e1b;
+    margin-top: 0px;
+    padding: 20px;
+}
