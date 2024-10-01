@@ -18,10 +18,10 @@
         </div>
 
         <nav>
-            <ul class="nav_links">
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Project</a></li>
-                <li><a href='#'>About us</a></li>
+            <ul class="nav_links" id="nav_bar">
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#project'>Project</a></li>
+                <li><a href='#about'>About us</a></li>
             </ul>
         </nav>
         <a href='#'>
@@ -30,13 +30,34 @@
         
     </header>
     
-    <div class="home">
+    
+    <section id="home">
+        <div class="nologin">
+            <h1>Login with <span style="color:#913592;">Your</span> Login id </h1>
+            <h2>To get <span style="color:#913592;">started</span></h2>
+        </div>
+
+
+
         <div class="login_screen" id="popup">
-            <h3>hi  hello</h3>
-            <p>enna da</p>
+            <h3 style="color:#f0e4f1;">Enter your Login id</h3>
+            <input type="password" id="password" name="password" placeholder="Login id">
             <button onclick="closelogin()">Login</button>
         </div>
-    </div>
+        
+    </section>
+      
+    <!-- Project section -->
+    <section id="project" style="color: #f0e4f1;padding: 200px;">
+        <h1>Project Section</h1>
+        <p>This is the project section content.</p>
+    </section>
+
+    <!-- About Us section -->
+    <section id="about" style="color: #f0e4f1;padding: 200px;">
+        <h1>About Us</h1>
+        <p>This is the about us section content.</p>
+    </section>
     
     
         

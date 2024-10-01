@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color:rgb(3, 2, 3);
+    background-color:rgb(3,2,3);
 
 }
 li, a, button{
@@ -15,18 +17,27 @@ li, a, button{
     text-decoration: none;
     
 }
-header{
-    display:flex;
-    justify-content:flex-end;
+header {
+    display: flex;
+    justify-content: space-between; 
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px 20px; 
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    background-color: rgb(3, 2, 3); 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 .logo{
     cursor: pointer;
     margin-right: auto;
 }
 .nav_links{
     list-style: none;
+
+    
     
 }
 .nav_links li{
@@ -52,21 +63,38 @@ button:hover{
 
 }
 .login_screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
     
     width: 400px;
     position: absolute;
-    background-color:white;
+    background-color:rgba(58, 41, 58, 1);
     border-radius: 6px;
     transform: translate(-50%,-50%) scale(0.1);
     top:0;
     left: 50%;
+    height: 150px;
     
     text-align: center;
-    color:#f0e4f1;
+    /* color:#612762; */
     padding: 0px 30px 30px;
     visibility: hidden;
     transition: transform 0.4s,top 0.4s;
     
+}
+.login_screen h3 ,.login_screen input{
+    background-color: rgba(58, 41, 58, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:#f0e4f1;
+    text-decoration: none;
+    
+}
+login_screen h3 {
+    font-size: 20px;
 }
 .open-login_screen{
     top:50%;
@@ -75,9 +103,17 @@ button:hover{
 }
 
 .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 80vh;
     width: 100%;
+}
+.nologin{
+    color: #f0e4f1;
+    padding: 200px;
+    font-size: 40px;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
 }
